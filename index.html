@@ -2,12 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Bitcoin Price Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <h1>Bitcoin Current Price is: <span id="price"></span></h1>
-    <button>Refresh Data</button>
+    <div class="container center">
+      <h2>Bitcoin Current Price is:<br> <span id="price"></span></h2>
+
+      <div>
+        <form>
+          <p>
+            <label>
+              <input class="with-gap" type="radio" name="currency"  value="USD" checked>
+              <span>USD</span>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input class="with-gap" type="radio" name="currency"  value="EUR">
+              <span>EUR</span>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input class="with-gap" type="radio" name="currency"  value="GBP">
+              <span>GBP</span>
+            </label>
+          </p>
+        </form>
+      </div>
+
+      <button class="waves-effect waves-light btn"><i class="material-icons right">refresh</i>Refresh Data</button>
+
+    </div>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
