@@ -1,6 +1,7 @@
 # btc-currency
 
 JS AJAX Bitcoin Currency Checker
+### [Live Demo](http://github.allaev.com/btc-currency/) :point_left:
 
 - JavaScript
 - AJAX
